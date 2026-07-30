@@ -9,9 +9,11 @@ export default function About() {
                     <h2 className="section-title">About MMTI</h2>
                     <div className="section-accent"></div>
 
-                    <div className="about-text">
-                        The Mumbai Maritime Training Institute (MMTI) has a steadfast commitment to quality maritime education and practical excellence.
-                    </div>
+                    <p className="about-text">
+                        The Mumbai Maritime Training Institute has a commitment to quality training. The Institute is ISO 9001:2015 Quality certified by DNV. All the courses offered at MMTI are approved by DG Shipping. MMTI has been graded by DNV as A1 (outstanding) Institute. The strength of each class is limited to facilitate individual attention. You can discuss your individual needs, problems and requirements with the Institute and the faculty for the competency courses. Even after your exams, you are always welcome to approach us for any guidance. 
+                        <br/><br/>
+                        MMTI is also selected as preferred institute by FOSMA- MASSA for competency & modular courses. Several "Best Training Institute" and "Best Student" awards are testimony to this fact. Located in the heart of Mumbai at Andheri, we are close to Andheri Railway Station, a couple of hundred meters to two Metro lines and are also serviced by several bus routes & taxi services and easily accessible from Airport.
+                    </p>
 
                     <div className="heading">Key Highlights & Accreditations</div>
                     <ul className="logo-bullet-list">

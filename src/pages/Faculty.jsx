@@ -47,20 +47,20 @@ export default function Faculty() {
       <div className="about-image">
         <div className="director-card">
           <img
-            src="/img/owner-director-1.png"
-            alt="Capt. C.L. Dubey"
+            src="/photo_gallery/capt.cl dubey.png"
+            alt="Capt. C. L. Dubey"
             className="director-img"
           />
-          <div className="director-name">Capt. C.L. Dubey</div>
+          <div className="director-name">Capt. C. L. Dubey</div>
         </div>
 
         <div className="director-card">
           <img
-            src="/img/owner-director-2.png"
-            alt="Capt. O.P. Yadav"
+            src="/photo_gallery/capt.op yadav.png"
+            alt="Capt. O. P. Yadav"
             className="director-img"
           />
-          <div className="director-name">Capt. O.P. Yadav</div>
+          <div className="director-name">Capt. O. P. Yadav</div>
         </div>
       </div>
       <div className="faculty-container">

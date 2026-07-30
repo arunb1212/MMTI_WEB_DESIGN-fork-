@@ -338,8 +338,8 @@ class App {
       { image: "/photo_gallery/SimulatorRoom9.jpg", text: 'Desk Setup' },
       { image: "/photo_gallery/SimulatorRoom2.jpg", text: 'Classrooms' },
       { image: "/photo_gallery/MMTI Khopoli Swimming Pool.jpg", text: 'Training' },
-      { image: `/img/owner-director-1.png`, text: 'Captain C.L  Dubey' },
-      { image: `/img/owner-director-2.png`, text: 'Capt. O.P. Yadav' },
+      { image: `/photo_gallery/capt.cl dubey.png`, text: 'Captain C.L. Dubey' },
+      { image: `/photo_gallery/capt.op yadav.png`, text: 'Capt. O.P. Yadav' },
       { image: `/photo_gallery/MMTI - CMMI meeting 01Sep17.jpg`, text: 'CMMI meeting' },
     
   
