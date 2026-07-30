@@ -6,6 +6,7 @@ import About from './Components/About'
 import Courses from './Components/Courses'
 import Faculty from './pages/Faculty'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 import PhotoGallery from './pages/Photo_gallery'
 import Library from './pages/Library'
 import News from './pages/News'
@@ -27,6 +28,7 @@ function App() {
             <Courses />
             <About />
             <Contact />
+            <Footer />
           </>
         } />
         <Route path="/gallery" element={<PhotoGallery />} />
