@@ -10,21 +10,25 @@
     margin: 0;
     padding: 0;
 }
-.hero-logos{
-    padding: 3rem;
-    min-height: 30px;
-    justify-self: left;
-    align-items: left;
-    justify-content: left;
-
+.hero-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding: 0;
 }
 
 .logo {
-    height: 100px;
-    min-height: 30px;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 4px 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .hero-background {

@@ -132,8 +132,145 @@
     font-weight: 700;
 }
 .heading {
-    font-size: larger;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f2c5f;
+    margin-top: 1.5rem;
+}
+
+/* Logo Bullet Points using MMTI LLP LOGO - Final.jpg */
+.logo-bullet-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.logo-bullet-list li {
+    position: relative;
+    padding-left: 2.2rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+.logo-bullet-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 22px;
+    height: 22px;
+    background-image: url('/img/MMTI LLP LOGO - Final.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 132, 255, 0.2);
+}
+
+/* Leadership Cards Section */
+.leadership-section {
+    width: 100%;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.leadership-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+.leadership-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.leader-card {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 44, 95, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    transition: all 0.3s ease;
+    align-items: stretch;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 212, 255, 0.2);
+    border-color: #00d4ff;
+}
+
+.leader-photo-column {
+    flex: 0 0 240px;
+    background: linear-gradient(135deg, #0f2c5f, #0084ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.leader-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.8rem;
+}
+
+.placeholder-avatar {
+    background: #ffffff;
+    padding: 10px;
+}
+
+.leader-role-badge {
+    background: #00d4ff;
+    color: #08203f;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.leader-bio-column {
+    flex: 1;
+    padding: 1.8rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leader-name {
+    font-size: 1.5rem;
+    color: #0f2c5f;
+    margin: 0 0 0.3rem 0;
+    font-weight: 800;
+}
+
+.leader-qualifications {
+    font-size: 0.95rem;
+    color: #0084ff;
     font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.leader-bullets {
+    margin: 0.5rem 0 0 0;
 }
 
 .about-card p {
@@ -293,6 +430,21 @@
 }
 
 @media (max-width: 768px) {
+    .leader-card {
+        flex-direction: column;
+    }
+
+    .leader-photo-column {
+        flex: none;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        box-sizing: border-box;
+    }
+
+    .leader-bio-column {
+        padding: 1.2rem;
+    }
+
     .about {
         padding: 3rem 0;
     }

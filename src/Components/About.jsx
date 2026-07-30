@@ -10,25 +10,113 @@ export default function About() {
                     <div className="section-accent"></div>
 
                     <div className="about-text">
-                        The Mumbai Maritime Training Institute has a commitment to quality training. The Institute is ISO 9001:2015 Quality certified by DNV. All the courses offered at MMTI are approved by DG Shipping. MMTI has been graded by DNV as A1 (outstanding) Institute. The strength of each class is limited to facilitate individual attention. You can discuss your individual needs, problems and requirements with the Institute and the faculty for the competency courses. Even after your exams, you are always welcome to approach us for any guidance.
-                        MMTI is also selected as preferred institute by FOSMA- MASSA for competency & modular courses Several “Best Training Institute” and “Best Student” awards are testimony to this fact.
-                        Located in the heart of Mumbai at Andheri, we are close to Andheri Railway Station, a couple of hundred meters to two Metro lines and are also serviced by several bus routes & taxi services and easily accessible from Airport.
+                        The Mumbai Maritime Training Institute (MMTI) has a steadfast commitment to quality maritime education and practical excellence.
+                    </div>
 
-                        <br /><br />
-                        <div className='heading'>The MMTI is run professionally and promoted by </div>
-                        <p className='owner-info'>
-                            <b>Capt. C. L. Dubey</b>, Director & Owner is a science graduate, Master Mariner, and Extra Master with over 20 years of sailing experience and 34 years as a maritime trainer. He has served as a paper setter, moderator, and examiner at Mumbai University, as well as a paper setter and examiner for the Directorate General of Shipping, Government of India. He has also been a fellow and warden of The Company of Master Mariners of India (CMMI). Capt. Dubey represented India as part of the delegation at the “Human Element, Training and Watchkeeping” Ninth Session (HTW9) meeting at IMO London in February 2023 and also participated in HTW 10 and HTW 11 as an online attendee. He is the author of several maritime textbooks used by students in India and abroad and was appointed as a “Competent Person” by IMO in February 2024.
-                        </p>
+                    <div className="heading">Key Highlights & Accreditations</div>
+                    <ul className="logo-bullet-list">
+                        <li>ISO 9001:2015 Quality Certified by DNV with Grade A1 (Outstanding) classification.</li>
+                        <li>All maritime courses strictly approved by the Directorate General of Shipping (D.G. Shipping), Govt. of India.</li>
+                        <li>Selected as preferred training institute by FOSMA & MASSA for competency & modular courses.</li>
+                        <li>Honored with several "Best Training Institute" and "Best Student" national awards.</li>
+                        <li>Conveniently located in Andheri, Mumbai — close to Railway Station, Metro lines, bus routes & Airport.</li>
+                    </ul>
+                </div>
 
-                        <p className='owner-info'>
-                            <b>Capt. O. P. Yadav</b>, Director & Owner, is a Master Mariner with 26 years of sailing experience and 28 years as a maritime trainer. He serves on the panel for oral examinations conducted by the Directorate General of Shipping, Government of India, and has been a member of The Company of Master Mariners of India (CMMI).</p>
+                <div className="leadership-section">
+                    <h2 className="section-title">Our Leadership & Directors</h2>
+                    <div className="section-accent"></div>
+                    <p className="leadership-subtitle">Run professionally and promoted by distinguished Master Mariners</p>
 
-                        <p className='owner-info'>
-                            <b>Capt. F. X. Coutinho</b>, Principal, is a Master Mariner with 12 years of sailing experience and 22 years of experience as a maritime trainer. He is part of the oral examination panel for the Directorate General of Shipping, Government of India, and also serves on the paper correction panel within the same organization.</p>
+                    <div className="leadership-grid">
+                        {/* Capt. C. L. Dubey */}
+                        <div className="leader-card">
+                            <div className="leader-photo-column">
+                                <img
+                                    src="/photo_gallery/capt.cl dubey.png"
+                                    alt="Capt. C. L. Dubey"
+                                    className="leader-photo"
+                                />
+                                <span className="leader-role-badge">Director & Owner</span>
+                            </div>
+                            <div className="leader-bio-column">
+                                <h3 className="leader-name">Capt. C. L. Dubey</h3>
+                                <p className="leader-qualifications">B.Sc., Master Mariner & Extra Master</p>
+                                <ul className="logo-bullet-list leader-bullets">
+                                    <li><b>Maritime Experience:</b> 20 years of sailing experience and 34 years as a Maritime Trainer.</li>
+                                    <li><b>Academic & DGS Panel:</b> Paper setter, moderator, and examiner for Mumbai University and Directorate General of Shipping, Govt. of India.</li>
+                                    <li><b>IMO & International Delegate:</b> Fellow and Warden of The Company of Master Mariners of India (CMMI). Represented India at IMO HTW9 (London, Feb 2023), HTW10, and HTW11.</li>
+                                    <li><b>Author & IMO Competent Person:</b> Author of several maritime textbooks used worldwide. Appointed as IMO "Competent Person" in Feb 2024.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <p className='owner-info'>
-                            <b>Capt. M. R. Martins</b>, Vice-Principal, is a Master Mariner with 10 years of sailing experience and 12 years of experience as a maritime trainer. He is also a member of the oral examination panel for the Directorate General of Shipping, Government of India, and is part of the paper correction group in D.G. Shipping
-                        </p>
+                        {/* Capt. O. P. Yadav */}
+                        <div className="leader-card">
+                            <div className="leader-photo-column">
+                                <img
+                                    src="/photo_gallery/capt.op yadav.png"
+                                    alt="Capt. O. P. Yadav"
+                                    className="leader-photo"
+                                />
+                                <span className="leader-role-badge">Director & Owner</span>
+                            </div>
+                            <div className="leader-bio-column">
+                                <h3 className="leader-name">Capt. O. P. Yadav</h3>
+                                <p className="leader-qualifications">Master Mariner</p>
+                                <ul className="logo-bullet-list leader-bullets">
+                                    <li><b>Maritime Experience:</b> 26 years of sailing experience and 28 years as a Maritime Trainer.</li>
+                                    <li><b>DGS Examination Panel:</b> Member on the panel of Oral Examinations in D.G. Shipping, Govt. of India.</li>
+                                    <li><b>CMMI Member:</b> Active member of The Company of Master Mariners of India (CMMI).</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Capt. F. X. Coutinho */}
+                        <div className="leader-card">
+                            <div className="leader-photo-column">
+                                <img
+                                    src="/img/empty_profile.png"
+                                    alt="Capt. F. X. Coutinho"
+                                    className="leader-photo placeholder-avatar"
+                                />
+                                <span className="leader-role-badge">Principal</span>
+                            </div>
+                            <div className="leader-bio-column">
+                                <h3 className="leader-name">Capt. F. X. Coutinho</h3>
+                                <p className="leader-qualifications">Principal & Master Mariner</p>
+                                <ul className="logo-bullet-list leader-bullets">
+                                    <li><b>Maritime Experience:</b> 12 years of sailing experience and 22 years as a Maritime Trainer.</li>
+                                    <li><b>DGS Panels:</b> Panel member for Oral Examinations and Paper Correction Group in D.G. Shipping, Govt. of India.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Capt. M. R. Martins */}
+                        <div className="leader-card">
+                            <div className="leader-photo-column">
+                                <img
+                                    src="/img/empty_profile.png"
+                                    alt="Capt. M. R. Martins"
+                                    className="leader-photo placeholder-avatar"
+                                />
+                                <span className="leader-role-badge">Vice-Principal</span>
+                            </div>
+                            <div className="leader-bio-column">
+                                <h3 className="leader-name">Capt. M. R. Martins</h3>
+                                <p className="leader-qualifications">Vice-Principal & Master Mariner</p>
+                                <ul className="logo-bullet-list leader-bullets">
+                                    <li><b>Maritime Experience:</b> 10 years of sailing experience and 12 years as a Maritime Trainer.</li>
+                                    <li><b>DGS Panels:</b> Member of Oral Examination panel and Paper Correction group in D.G. Shipping, Govt. of India.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="team-button-container">
+                        <Link to="/faculty">
+                            <button className="cta-btn">View All Faculty & Team</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -57,9 +145,10 @@ export default function About() {
                         <p>Our certifications are recognized globally, opening doors to international maritime careers.</p>
                     </div>
                 </div>
+
                 <div className="alumni-network">
                     <div className="alumni-image-holder">
-                        <div className="alumni-image-blank">Alumni Image</div>
+                        <div className="alumni-image-blank">MMTI Alumni Community</div>
                     </div>
                     <div className="alumni-action">
                         <h3>Alumni Network</h3>
@@ -67,43 +156,16 @@ export default function About() {
                         <Link to="/alumini" className="alumni-btn">Visit Alumni Network</Link>
                     </div>
                 </div>
+
                 <div className="quality-policy">
-                    <h3>Quality Po(ISO CL. 5.2.1)</h3>
+                    <h3>Quality Policy (ISO 9001:2015 - CL. 5.2.1)</h3>
                     <p>
                         We at MMTI strive to provide maritime training of the highest standard to serving, or those intending
                         to serve in the Merchant Navy, so that we have Safer and Securer Ships and Cleaner Seas.
                         We aim to achieve this by explicitly complying with the STCW Convention as amended and all related National Legislation.
                     </p>
                 </div>
-                <section id="faculty" className="faculty">
-
-                    <h2 className="section-title">Our Directors</h2>
-                    <div className="about-image">
-                        <div className="director-card">
-                            <img
-                                src="/img/owner-director-1.png"
-                                alt="Capt. C.L. Dubey"
-                                className="director-img"
-                            />
-                            <div className="director-name">Capt. C.L. Dubey</div>
-                        </div>
-
-                        <div className="director-card">
-                            <img
-                                src="/img/owner-director-2.png"
-                                alt="Capt. O.P. Yadav"
-                                className="director-img"
-                            />
-                            <div className="director-name">Capt. O.P. Yadav</div>
-                        </div>
-                    </div>
-                    <div className="team-button-container">
-                        <Link to="/faculty">
-                            <button className="cta-btn">View our Team</button>
-                        </Link>
-                    </div>
-                </section>
             </div>
-        </section >
+        </section>
     );
 }
