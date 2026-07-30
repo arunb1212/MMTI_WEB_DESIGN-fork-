@@ -105,7 +105,7 @@ export default function Navbar() {
                         <a href="#contact" className="nav-link" onClick={(e) => handleNavClick(e, '#contact')}>Contact</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-cta" onClick={() => navigate("/enroll")}>Book Now</a>
+                        <a className="nav-link nav-cta" onClick={(e) => handleCoursesClick(e,'#courses')}>Book Now</a>
                     </li>
                 </ul>
             </div>
