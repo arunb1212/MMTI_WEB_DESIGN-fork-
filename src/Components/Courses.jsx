@@ -6,76 +6,53 @@ export default function Courses() {
   const [activeFilter, setActiveFilter] = useState("All");
   const navigate = useNavigate();
   const courses = [
-    {
-      id: 1,
-      title: "Basic Safety Training",
-      duration: "2 Days",
-      level: "Foundation",
-      type: "Modular Courses",
-      description:
-        "Essential safety procedures and emergency protocols for maritime professionals.",
-      highlights: ["Fire Safety", "First Aid", "Survival Techniques"],
-    },
+    
     {
       id: 2,
-      title: "Second Mate (FG)",
-      duration: "5 Months",
-      level: "Professional",
-      type: "Competency Courses",
+      title: "Modular Courses",
       description:
-        "Comprehensive training for Second Officer certification and competency.",
-      highlights: ["Navigation", "Seamanship", "Cargo Operations"],
+        "Short-duration courses focusing on essential safety and operational skills.",
+      highlights: ["Basic Safety Training (fire safety, first aid, survival techniques).", "Mandatory for all seafarers before joining ships.", "Typically 2–5 days, highly practical and hands-on"],
     },
     {
       id: 3,
-      title: "Chief Mate Phase 1 & 2",
-      duration: "6 Months",
-      level: "Advanced",
-      type: "Competency Courses",
+      title: "Package Courses",
       description:
-        "Executive-level training for Chief Officer positions on commercial vessels.",
+        " Bundled training programs combining multiple modules for efficiency.",
       highlights: [
-        "Leadership",
-        "Ship Management",
-        "International Regulations",
+        "Designed for cadets and officers preparing for competency exams",
+        "Includes safety, navigation, and simulator training in one package.",
+        "Cost-effective compared to booking individual courses",
+        "Special discounts"
       ],
     },
     {
       id: 4,
-      title: "Advanced Safety Management",
-      duration: "3 Days",
-      level: "Professional",
-      type: "Refresher's Courses",
+      title: "Refresher's Courses",
       description:
-        "Advanced safety protocols and incident management for maritime leaders.",
+        "Short courses to update skills and comply with revalidation requirements.",
       highlights: [
-        "Risk Assessment",
-        "Crisis Management",
-        "Safety Documentation",
+        "Ideal for mariners returning to sea after a break",
+        "Covers updated IMO conventions, safety drills, and emergency procedures.",
+        "Ensures compliance with latest DG Shipping and STCW amendments.",
       ],
     },
     {
       id: 5,
-      title: "NWKO (NCV)",
-      duration: "2 Months",
-      level: "Foundation",
-      type: "Package Courses",
+      title: "Competency Courses",
       description:
-        "National Voyage Knowledge course for aspiring maritime officers.",
-      highlights: ["Navigation Skills", "Deck Operations", "Safety Procedures"],
+        " Long-duration, exam-oriented courses for professional certification.",
+      highlights: ["Prepares candidates for MMD exams and higher ranks.", "Chief Mate Phase I & II ", "etc."],
     },
     {
       id: 6,
-      title: "Tanker Training",
-      duration: "1 Week",
-      level: "Specialized",
-      type: "Simulator Courses",
+      title: "Simulator Courses",
       description:
-        "Specialized training for tanker vessel operations and regulations.",
+        "Advanced training using ship simulators for real-world scenarios.",
       highlights: [
-        "Hazmat Procedures",
-        "Cargo Safety",
-        "Environmental Protection",
+        "ARPA and RANSCO ",
+        "Bridge resource management and cargo handling simulations",
+        "Builds confidence in handling emergencies and complex navigation situations",
       ],
     },
   ];
@@ -107,11 +84,6 @@ export default function Courses() {
     }
   };
 
-  const filteredCourses =
-    activeFilter === "All"
-      ? courses
-      : courses.filter((course) => course.type === activeFilter);
-
   return (
     <section id="courses" className="courses">
       <div className="courses-container">
@@ -127,7 +99,7 @@ export default function Courses() {
         {/* Filter Buttons */}
         <div className="filter-section">
           <h3 className="filter-title">Filter by Course Type</h3>
-          <div className="filter-buttons">
+          {/* <div className="filter-buttons">
             {filterOptions.map((filter) => (
               <button
                 key={filter}
@@ -137,44 +109,37 @@ export default function Courses() {
                 {filter}
               </button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="courses-grid">
-          {filteredCourses.length > 0 ? (
-            filteredCourses.map((course) => (
-              <div key={course.id} className="course-card">
-                <div className="course-header">
-                  <span className="course-level">{course.level}</span>
-                  <span className="course-duration">⏱️ {course.duration}</span>
-                </div>
+          {courses.map((course) => (
+            <div
+              key={course.id}
+              className={`course-card ${activeFilter === course.title ? "active" : ""}`}
+            >
+              
 
-                <h3 className="course-title">{course.title}</h3>
-                <p className="course-type">{course.type}</p>
-                <p className="course-description">{course.description}</p>
+              <h3 className="course-title">{course.title}</h3>
+              <p className="course-description">{course.description}</p>
 
-                <div className="course-highlights">
-                  <h4>Key Topics:</h4>
-                  <ul>
-                    {course.highlights.map((highlight, idx) => (
-                      <li key={idx}>{highlight}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <button
-                  onClick={() => navigate("/enroll")}
-                  className="course-btn"
-                >
-                  Enroll Now
-                </button>
+              <div className="course-highlights">
+                <h4>Highlights:</h4>
+                <ul>
+                  {course.highlights.map((highlight, idx) => (
+                    <li key={idx}>{highlight}</li>
+                  ))}
+                </ul>
               </div>
-            ))
-          ) : (
-            <div className="no-courses">
-              No courses available for this filter.
+
+              <button
+                onClick={() => handleFilterClick(course.title)}
+                className="course-btn"
+              >
+                View Course list ➔
+              </button>
             </div>
-          )}
+          ))}
         </div>
 
         <div className="courses-cta">
